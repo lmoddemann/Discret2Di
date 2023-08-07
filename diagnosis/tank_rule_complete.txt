@@ -1,0 +1,6 @@
+v3 AND v23 IMPLIES aaaaaaaaab
+v12 AND v23 IMPLIES aaaaaaaaba
+v3 AND v23 IMPLIES aaaaabaaaa
+v12 AND v23 IMPLIES aaaabaaaaa
+q1 AND v12 IMPLIES aaabaaaaaa
+q1 AND v12 IMPLIES abaaaaaaaa
