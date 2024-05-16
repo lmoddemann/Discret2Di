@@ -22,7 +22,8 @@ def load_model(version):
     ckpt_file_path = f'./{MODEL_VERSION}/checkpoints/{ckpt_file_name}'
     with open(f'./{MODEL_VERSION}/hparams.yaml') as f:
         hparam = yaml.safe_load(f)
-    model = StateVAE(hparams=hparam["hparams"]).load_from_checkpoint(ckpt_file_path)
+    model = StateVAE.load_from_checkpoint(ckpt_file_path, hparams=hparam["hparams"]).to('cuda')
+    
     return model, hparam
 
 
